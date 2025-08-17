@@ -2,6 +2,7 @@ import type { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
 import AgeGate from '../../components/AgeGate';
 import type { Category, Site } from '../../lib/db';
+import Image from 'next/image';
 
 interface CategoryPageProps {
   category: Category | null;
@@ -19,7 +20,7 @@ export default function CategoryPage({ category, sites }: CategoryPageProps) {
           {sites.map((site, index) => (
             <Link id={`site-card-${index + 1}`} key={site.id} href={`/site/${site.id}`}>
               <div className="rounded-lg border p-4 hover:bg-gray-100">
-                <img
+                <Image
                   src={site.previewImageURL}
                   alt={site.name}
                   className="mb-2 h-40 w-full rounded object-cover"
