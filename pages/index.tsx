@@ -1,5 +1,5 @@
 import type { GetStaticProps } from 'next';
-import Link from 'next/link';
+// import Link from 'next/link';
 import AgeGate from '../components/AgeGate';
 import CategoryCard from '../components/CategoryCard';
 import type { Category, Site } from '../lib/db';

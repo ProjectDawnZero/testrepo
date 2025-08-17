@@ -1,5 +1,5 @@
 import AgeGate from '../components/AgeGate';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function TermsOfService() {
   return (
@@ -24,7 +24,7 @@ export default function TermsOfService() {
         </p>
         <h2 className="mb-2 mt-6 text-xl font-semibold">Disclaimers</h2>
         <p className="text-gray-700">
-          The service is provided "as is" without warranties. We do not guarantee availability,
+          The service is provided as is without warranties. We do not guarantee availability,
           accuracy, or fitness for any particular purpose.
         </p>
         <h2 className="mb-2 mt-6 text-xl font-semibold">Changes</h2>

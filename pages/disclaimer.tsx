@@ -1,5 +1,5 @@
 import AgeGate from '../components/AgeGate';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function Disclaimer() {
   return (
@@ -13,7 +13,7 @@ export default function Disclaimer() {
         </p>
         <h2 className="mb-2 mt-6 text-xl font-semibold">No Warranties</h2>
         <p className="text-gray-700">
-          The directory is provided on an "as is" and "as available" basis.
+          The directory is provided on an (as is) and (as available) basis.
         </p>
         <h2 className="mb-2 mt-6 text-xl font-semibold">Adult Content Warning</h2>
         <p className="text-gray-700">

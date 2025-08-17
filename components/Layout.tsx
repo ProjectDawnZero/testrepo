@@ -4,6 +4,7 @@ import AdHorizontalTop from './AdHorizontalTop';
 import AdHorizontalBottom from './AdHorizontalBottom';
 import AdVerticalLeft from './AdVerticalLeft';
 import AdVerticalRight from './AdVerticalRight';
+import Image from 'next/image';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -54,6 +55,7 @@ export default function Layout({ children }: LayoutProps) {
 
       <footer className="mt-12 bg-gray-900 p-6 text-gray-300">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <Image alt="RTA" src={'/images/rta_logo.gif'} className="mb-4" />
           <p className="text-sm">© {new Date().getFullYear()} Adult Directory</p>
           <div className="flex flex-col items-center text-sm sm:flex-row">
             <Link href="/ratings" className="mr-4 hover:underline">

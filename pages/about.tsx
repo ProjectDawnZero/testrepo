@@ -1,5 +1,5 @@
 import AgeGate from '../components/AgeGate';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function About() {
   return (

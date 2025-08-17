@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Category, Site } from '../lib/db';
+import Image from 'next/image';
 
 interface CategoryCardProps {
   category: Category;
@@ -31,7 +32,7 @@ export default function CategoryCard({ category, sites, id }: CategoryCardProps)
             title={site.name}
           >
             {site.iconURL ? (
-              <img src={site.iconURL} alt={site.name} className="h-6 w-6 rounded" />
+              <Image src={site.iconURL} alt={site.name} className="h-6 w-6 rounded" />
             ) : (
               <div className="flex h-6 w-6 items-center justify-center rounded bg-gray-200 text-[10px] text-gray-600">
                 {site.name.charAt(0)}
