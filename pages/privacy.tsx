@@ -11,15 +11,6 @@ export default function PrivacyPolicy() {
           ExoClick. No personal data is collected beyond what is necessary for site functionality.
           Contact us at [your-email] for data inquiries.
         </p>
-        <footer className="mt-6 text-center">
-          <Link href="/" className="text-blue-600 hover:underline">
-            Home
-          </Link>
-          {' | '}
-          <Link href="/compliance" className="text-blue-600 hover:underline">
-            18 U.S.C. § 2257
-          </Link>
-        </footer>
       </div>
     </AgeGate>
   );

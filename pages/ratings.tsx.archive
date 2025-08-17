@@ -50,19 +50,6 @@ export default function Ratings() {
           If you operate a site and believe your ranking is inaccurate, contact us with evidence and
           we&apos;ll review it.
         </p>
-        <footer className="mt-6 text-center">
-          <Link href="/" className="text-blue-600 hover:underline">
-            Home
-          </Link>
-          {' | '}
-          <Link href="/privacy-policy" className="text-blue-600 hover:underline">
-            Privacy Policy
-          </Link>
-          {' | '}
-          <Link href="/compliance" className="text-blue-600 hover:underline">
-            18 U.S.C. § 2257
-          </Link>
-        </footer>
       </div>
     </AgeGate>
   );

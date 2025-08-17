@@ -1,6 +1,7 @@
 export default function AdSquare() {
+  const hide = true;
   return (
-    <div className="mt-6 rounded-lg border p-4">
+    <div hidden={hide} className="mt-6 rounded-lg border p-4">
       <p className="text-center">Ad Space Square</p>
       <div className="flex flex-row">
         <div className="flex flex-col">

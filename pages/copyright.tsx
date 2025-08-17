@@ -18,15 +18,6 @@ export default function Copyright() {
           under penalty of perjury that you are authorized to act on behalf of the rights holder.
         </p>
         <p className="mt-4 text-gray-700">Email: dmca@yourdomain.com</p>
-        <footer className="mt-6 text-center">
-          <Link href="/" className="text-blue-600 hover:underline">
-            Home
-          </Link>
-          {' | '}
-          <Link href="/privacy-policy" className="text-blue-600 hover:underline">
-            Privacy Policy
-          </Link>
-        </footer>
       </div>
     </AgeGate>
   );

@@ -11,15 +11,6 @@ export default function Compliance() {
           statute are maintained by the respective site operators. Contact individual sites for
           their compliance statements.
         </p>
-        <footer className="mt-6 text-center">
-          <Link href="/" className="text-blue-600 hover:underline">
-            Home
-          </Link>
-          {' | '}
-          <Link href="/privacy" className="text-blue-600 hover:underline">
-            Privacy Policy
-          </Link>
-        </footer>
       </div>
     </AgeGate>
   );

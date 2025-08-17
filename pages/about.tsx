@@ -13,15 +13,6 @@ export default function About() {
         </p>
         <h2 className="mb-2 mt-6 text-xl font-semibold">Contact</h2>
         <p className="text-gray-700">Email: contact@yourdomain.com</p>
-        <footer className="mt-6 text-center">
-          <Link href="/" className="text-blue-600 hover:underline">
-            Home
-          </Link>
-          {' | '}
-          <Link href="/privacy-policy" className="text-blue-600 hover:underline">
-            Privacy Policy
-          </Link>
-        </footer>
       </div>
     </AgeGate>
   );

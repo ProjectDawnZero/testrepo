@@ -18,9 +18,6 @@ export default function Layout({ children }: LayoutProps) {
             Adult Directory
           </Link>
           <div className="flex flex-col items-center sm:flex-row">
-            <Link href="/ratings" className="mr-4 hover:underline">
-              Ratings
-            </Link>
             <Link href="/faq" className="mr-4 hover:underline">
               FAQ
             </Link>

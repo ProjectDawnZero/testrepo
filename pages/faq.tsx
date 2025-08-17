@@ -12,16 +12,6 @@ export default function FAQ() {
             <p className="text-gray-700">No. We only link to third-party websites.</p>
           </div>
           <div className="rounded-lg border p-4">
-            <h2 className="text-lg font-semibold">How are rankings decided?</h2>
-            <p className="text-gray-700">
-              See our{' '}
-              <Link className="text-blue-600 hover:underline" href="/ratings">
-                ratings
-              </Link>{' '}
-              page for criteria.
-            </p>
-          </div>
-          <div className="rounded-lg border p-4">
             <h2 className="text-lg font-semibold">Is the site free?</h2>
             <p className="text-gray-700">
               Yes. We may display ads or accept sponsorships, clearly labeled.
@@ -34,15 +24,6 @@ export default function FAQ() {
             </p>
           </div>
         </div>
-        <footer className="mt-6 text-center">
-          <Link href="/" className="text-blue-600 hover:underline">
-            Home
-          </Link>
-          {' | '}
-          <Link href="/privacy-policy" className="text-blue-600 hover:underline">
-            Privacy Policy
-          </Link>
-        </footer>
       </div>
     </AgeGate>
   );

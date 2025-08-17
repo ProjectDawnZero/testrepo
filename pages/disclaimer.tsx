@@ -20,15 +20,6 @@ export default function Disclaimer() {
           Linked websites may contain explicit adult content intended for consenting adults only.
           Ensure it is legal in your jurisdiction to view such content.
         </p>
-        <footer className="mt-6 text-center">
-          <Link href="/" className="text-blue-600 hover:underline">
-            Home
-          </Link>
-          {' | '}
-          <Link href="/privacy-policy" className="text-blue-600 hover:underline">
-            Privacy Policy
-          </Link>
-        </footer>
       </div>
     </AgeGate>
   );

@@ -32,15 +32,6 @@ export default function TermsOfService() {
           We may update these terms at any time. Continued use of the site constitutes acceptance of
           the updated terms.
         </p>
-        <footer className="mt-6 text-center">
-          <Link href="/" className="text-blue-600 hover:underline">
-            Home
-          </Link>
-          {' | '}
-          <Link href="/privacy-policy" className="text-blue-600 hover:underline">
-            Privacy Policy
-          </Link>
-        </footer>
       </div>
     </AgeGate>
   );
