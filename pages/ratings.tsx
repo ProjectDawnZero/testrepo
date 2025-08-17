@@ -1,0 +1,69 @@
+import AgeGate from '../components/AgeGate';
+import Link from 'next/link';
+
+export default function Ratings() {
+  return (
+    <AgeGate>
+      <div className="container mx-auto p-4">
+        <h1 className="mb-6 text-3xl font-bold">Ratings & Ranking Criteria</h1>
+        <p className="mb-4">
+          We evaluate and rank sites using objective criteria focused on user experience and safety.
+          Our goal is to help you discover quality websites quickly and responsibly.
+        </p>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="rounded-lg border p-4">
+            <h2 className="mb-2 text-xl font-semibold">Quality Signals</h2>
+            <ul className="list-inside list-disc space-y-1 text-gray-700">
+              <li>Content relevance and freshness</li>
+              <li>Site speed and uptime stability</li>
+              <li>Design clarity and usability</li>
+              <li>Mobile responsiveness</li>
+            </ul>
+          </div>
+          <div className="rounded-lg border p-4">
+            <h2 className="mb-2 text-xl font-semibold">Safety & Compliance</h2>
+            <ul className="list-inside list-disc space-y-1 text-gray-700">
+              <li>18 U.S.C. § 2257 compliance</li>
+              <li>Transparent moderation policies</li>
+              <li>Respect for DMCA/copyright</li>
+              <li>Reasonable ad density (no deceptive UI)</li>
+            </ul>
+          </div>
+          <div className="rounded-lg border p-4">
+            <h2 className="mb-2 text-xl font-semibold">Community Feedback</h2>
+            <ul className="list-inside list-disc space-y-1 text-gray-700">
+              <li>Reputation across communities</li>
+              <li>Signals from verified reviews</li>
+              <li>Responsiveness of site owners</li>
+            </ul>
+          </div>
+          <div className="rounded-lg border p-4">
+            <h2 className="mb-2 text-xl font-semibold">Placement Policy</h2>
+            <ul className="list-inside list-disc space-y-1 text-gray-700">
+              <li>Top placement reflects combined score across criteria</li>
+              <li>Sponsored placements are clearly labeled</li>
+              <li>Sites may move up or down as we re-evaluate</li>
+            </ul>
+          </div>
+        </div>
+        <p className="mt-6 text-gray-700">
+          If you operate a site and believe your ranking is inaccurate, contact us with evidence and
+          we&apos;ll review it.
+        </p>
+        <footer className="mt-6 text-center">
+          <Link href="/" className="text-blue-600 hover:underline">
+            Home
+          </Link>
+          {' | '}
+          <Link href="/privacy-policy" className="text-blue-600 hover:underline">
+            Privacy Policy
+          </Link>
+          {' | '}
+          <Link href="/compliance" className="text-blue-600 hover:underline">
+            18 U.S.C. § 2257
+          </Link>
+        </footer>
+      </div>
+    </AgeGate>
+  );
+}
