@@ -32,7 +32,13 @@ export default function CategoryCard({ category, sites, id }: CategoryCardProps)
             title={site.name}
           >
             {site.iconURL ? (
-              <Image src={site.iconURL} alt={site.name} className="h-6 w-6 rounded" />
+              <Image
+                width={24}
+                height={24}
+                src={site.iconURL}
+                alt={site.name}
+                className="h-6 w-6 rounded"
+              />
             ) : (
               <div className="flex h-6 w-6 items-center justify-center rounded bg-gray-200 text-[10px] text-gray-600">
                 {site.name.charAt(0)}

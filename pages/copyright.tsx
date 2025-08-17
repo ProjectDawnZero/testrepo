@@ -17,7 +17,7 @@ export default function Copyright() {
           detailed notice including the URLs in question, your contact information, and a statement
           under penalty of perjury that you are authorized to act on behalf of the rights holder.
         </p>
-        <p className="mt-4 text-gray-700">Email: dmca@yourdomain.com</p>
+        <p className="mt-4 text-gray-700">Email: dmca@gooningguide.com</p>
       </div>
     </AgeGate>
   );

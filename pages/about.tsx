@@ -12,7 +12,7 @@ export default function About() {
           continuously review listings and update rankings.
         </p>
         <h2 className="mb-2 mt-6 text-xl font-semibold">Contact</h2>
-        <p className="text-gray-700">Email: contact@yourdomain.com</p>
+        <p className="text-gray-700">Email: contact@gooningguide.com</p>
       </div>
     </AgeGate>
   );

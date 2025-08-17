@@ -16,7 +16,7 @@ export default function Home({ categories }: HomeProps) {
   return (
     <AgeGate>
       <div className="container mx-auto p-4">
-        <h1 className="mb-6 text-3xl font-bold">Adult Website Directory</h1>
+        <h1 className="mb-6 text-3xl font-bold">Gooning Guide - Adult Website Directory</h1>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {categories.map((category) => (
             <CategoryCard

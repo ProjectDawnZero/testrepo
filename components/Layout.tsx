@@ -16,7 +16,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className="bg-gray-800 p-4 text-white">
         <nav className="container mx-auto flex flex-col items-center justify-between sm:flex-row">
           <Link href="/" className="text-xl font-bold">
-            Adult Directory
+            <Image width={100} height={60} alt="Gooning Guide" src={'logo.png'} />
           </Link>
           <div className="flex flex-col items-center sm:flex-row">
             <Link href="/faq" className="mr-4 hover:underline">
@@ -55,8 +55,8 @@ export default function Layout({ children }: LayoutProps) {
 
       <footer className="mt-12 bg-gray-900 p-6 text-gray-300">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <Image alt="RTA" src={'/images/rta_logo.gif'} className="mb-4" />
-          <p className="text-sm">© {new Date().getFullYear()} Adult Directory</p>
+          <Image width={120} height={60} alt="RTA" src={'/images/rta_logo.gif'} className="mb-4" />
+          <p className="text-sm">© {new Date().getFullYear()} Gooning Guide</p>
           <div className="flex flex-col items-center text-sm sm:flex-row">
             <Link href="/ratings" className="mr-4 hover:underline">
               Ratings
