@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function AgeGate({ children }: { children: React.ReactNode }) {
@@ -31,9 +32,9 @@ export default function AgeGate({ children }: { children: React.ReactNode }) {
             I am 18 or older
           </button>
           <p className="mt-4">
-            <a href="/compliance" className="text-blue-600 hover:underline">
+            <Link href="/compliance" className="text-blue-600 hover:underline">
               Exit
-            </a>
+            </Link>
           </p>
         </div>
       </div>
