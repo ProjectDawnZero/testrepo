@@ -39,9 +39,9 @@ export default function RTALabelPage() {
           <div>
             <h2>RTA Meta Tag</h2>
             <p>This site includes the following RTA meta tag in its source code:</p>
-            <pre className="overflow-x-auto rounded-lg bg-gray-100 p-3 text-sm">
+            <div className="rounded-lg bg-gray-100 p-3 text-sm">
               {`<meta name="RTA" content="RTA-5042-1996-1400-1577-RTA" />`}
-            </pre>
+            </div>
           </div>
 
           <div>
