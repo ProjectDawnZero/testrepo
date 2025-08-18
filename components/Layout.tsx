@@ -1,9 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import AdHorizontalTop from './AdHorizontalTop';
-import AdHorizontalBottom from './AdHorizontalBottom';
-import AdVerticalLeft from './AdVerticalLeft';
-import AdVerticalRight from './AdVerticalRight';
 import Image from 'next/image';
 
 type LayoutProps = {
@@ -41,17 +37,7 @@ export default function Layout({ children }: LayoutProps) {
         </nav>
       </header>
 
-      <AdHorizontalTop />
-
-      <main className="min-h-screen">
-        <div className="flex flex-row">
-          <AdVerticalLeft />
-          {children}
-          <AdVerticalRight />
-        </div>
-      </main>
-
-      <AdHorizontalBottom />
+      <main className="min-h-screen">{children}</main>
 
       <footer className="mt-12 bg-gray-900 p-6 text-gray-300">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 sm:flex-row">

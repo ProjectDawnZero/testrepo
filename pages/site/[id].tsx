@@ -4,6 +4,7 @@ import AgeGate from '../../components/AgeGate';
 import type { Site } from '../../lib/db';
 import AdSquare from '@/components/AdSquare';
 import Image from 'next/image';
+import OuterAdContainer from '@/components/OuterAdContainer';
 
 interface SitePageProps {
   site: Site | null;
@@ -14,26 +15,28 @@ export default function SitePage({ site }: SitePageProps) {
 
   return (
     <AgeGate>
-      <div className="container mx-auto p-4">
-        <h1 className="mb-6 text-3xl font-bold">{site.name}</h1>
-        <Image
-          width={390}
-          height={210}
-          src={site.previewImageURL}
-          alt={site.name}
-          className="mb-4 h-auto w-full max-w-3xl rounded"
-        />
-        {site.description ? <p className="text-gray-700">{site.description}</p> : null}
-        <a
-          href={site.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Visit Site
-        </a>
-        <AdSquare />
-      </div>
+      <OuterAdContainer>
+        <div className="container mx-auto p-4">
+          <h1 className="mb-6 text-3xl font-bold">{site.name}</h1>
+          <Image
+            width={390}
+            height={210}
+            src={site.previewImageURL}
+            alt={site.name}
+            className="mb-4 h-auto w-full max-w-3xl rounded"
+          />
+          {site.description ? <p className="text-gray-700">{site.description}</p> : null}
+          <a
+            href={site.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Visit Site
+          </a>
+          <AdSquare />
+        </div>
+      </OuterAdContainer>
     </AgeGate>
   );
 }

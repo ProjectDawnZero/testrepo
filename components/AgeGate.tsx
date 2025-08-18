@@ -31,7 +31,7 @@ export default function AgeGate({ children }: { children: React.ReactNode }) {
             I am 18 or older
           </button>
           <p className="mt-4">
-            <a href="https://www.google.com" className="text-blue-600 hover:underline">
+            <a href="/compliance" className="text-blue-600 hover:underline">
               Exit
             </a>
           </p>
