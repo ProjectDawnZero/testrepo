@@ -9,10 +9,16 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <div className="place-self-center">
-      <header className="bg-gray-800 p-4 text-white">
+      <header className="bg-rose-600 p-4 text-white">
         <nav className="container mx-auto flex flex-col items-center justify-between sm:flex-row">
-          <Link href="/" className="text-xl font-bold">
-            <Image width={100} height={60} alt="Gooning Guide" src={'/logo.png'} />
+          <Link href="/" className="h-full rounded-xl bg-white text-xl font-bold">
+            <Image
+              className="rounded-xl"
+              width={100}
+              height={100}
+              alt="Gooning Guide"
+              src={'/logo.png'}
+            />
           </Link>
           <div className="flex flex-col items-center sm:flex-row">
             <Link href="/faq" className="mr-4 hover:underline">
@@ -42,7 +48,7 @@ export default function Layout({ children }: LayoutProps) {
 
       <main className="min-h-screen">{children}</main>
 
-      <footer className="mt-12 bg-gray-900 p-6 text-gray-300">
+      <footer className="mt-12 bg-rose-600 p-6 text-white">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 sm:flex-row">
           <Image width={120} height={60} alt="RTA" src={'/images/rta_logo.gif'} className="mb-4" />
           <p className="text-sm">© {new Date().getFullYear()} Gooning Guide</p>
