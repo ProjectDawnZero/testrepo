@@ -24,9 +24,9 @@ export default function CookieConsent() {
         <p className="mb-4 text-sm text-gray-600">
           We use cookies to enhance your browsing experience, analyze traffic, and serve
           personalized ads. By continuing to use our site, you agree to our{' '}
-          <a href="/privacy" className="underline">
+          <Link href="/privacy" className="underline">
             Privacy Policy
-          </a>
+          </Link>
           .
         </p>
         <div className="flex justify-end space-x-2">

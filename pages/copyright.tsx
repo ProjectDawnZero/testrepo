@@ -1,29 +1,6 @@
 import { useState } from 'react';
-// import { Card, CardContent } from "@/components/ui/card";
-
-// import { Button } from "@/components/ui/button";
-// import { Input } from "@/components/ui/input";
-// import { Textarea } from "@/components/ui/textarea";
 
 export default function CopyrightPage() {
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    url: '',
-    description: '',
-    signature: '',
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // TODO: send to API route for processing
-    alert('Notice submitted successfully.');
-  };
-
   return (
     <div className="mx-auto max-w-4xl space-y-6 p-6">
       <h1 className="text-3xl font-bold">DMCA / DSA Copyright Policy</h1>
@@ -86,49 +63,6 @@ export default function CopyrightPage() {
           >
             Loading…
           </iframe>
-          {/* <h2 className="text-xl font-semibold">Submit a Copyright Notice</h2> */}
-          {/* <form className="space-y-4" onSubmit={handleSubmit}>
-            <input
-              name="name"
-              placeholder="Your Full Name"
-              value={form.name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              name="email"
-              type="email"
-              placeholder="Your Email"
-              value={form.email}
-              onChange={handleChange}
-              required
-            />
-            <input
-              name="url"
-              placeholder="URL of Infringing Material"
-              value={form.url}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="textarea"
-              name="description"
-              placeholder="Description of Work"
-              value={form.description}
-              onChange={handleChange}
-              required
-            />
-            <input
-              name="signature"
-              placeholder="Electronic Signature"
-              value={form.signature}
-              onChange={handleChange}
-              required
-            />
-            <button type="submit" className="w-full">
-              Submit Notice
-            </button>
-          </form> */}
         </div>
       </div>
     </div>

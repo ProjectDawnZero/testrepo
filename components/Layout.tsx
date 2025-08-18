@@ -30,8 +30,11 @@ export default function Layout({ children }: LayoutProps) {
             <Link href="/privacy" className="mr-4 hover:underline">
               Privacy Policy
             </Link>
-            <Link href="/compliance" className="hover:underline">
+            <Link href="/compliance" className="mr-4 hover:underline">
               18 U.S.C. § 2257
+            </Link>
+            <Link href="/tos" className="mr-4 hover:underline">
+              Terms
             </Link>
           </div>
         </nav>
@@ -44,11 +47,11 @@ export default function Layout({ children }: LayoutProps) {
           <Image width={120} height={60} alt="RTA" src={'/images/rta_logo.gif'} className="mb-4" />
           <p className="text-sm">© {new Date().getFullYear()} Gooning Guide</p>
           <div className="flex flex-col items-center text-sm sm:flex-row">
-            <Link href="/ratings" className="mr-4 hover:underline">
-              Ratings
+            <Link href="/faq" className="mr-4 hover:underline">
+              FAQ
             </Link>
-            <Link href="/tos" className="mr-4 hover:underline">
-              Terms
+            <Link href="/about" className="mr-4 hover:underline">
+              About
             </Link>
             <Link href="/copyright" className="mr-4 hover:underline">
               Copyright
@@ -56,17 +59,14 @@ export default function Layout({ children }: LayoutProps) {
             <Link href="/disclaimer" className="mr-4 hover:underline">
               Disclaimer
             </Link>
-            <Link href="/faq" className="mr-4 hover:underline">
-              FAQ
-            </Link>
-            <Link href="/about" className="mr-4 hover:underline">
-              About
-            </Link>
             <Link href="/privacy" className="mr-4 hover:underline">
               Privacy Policy
             </Link>
-            <Link href="/compliance" className="hover:underline">
+            <Link href="/compliance" className="mr-4 hover:underline">
               18 U.S.C. § 2257
+            </Link>
+            <Link href="/tos" className="mr-4 hover:underline">
+              Terms
             </Link>
           </div>
         </div>
