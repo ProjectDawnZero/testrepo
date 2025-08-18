@@ -50,7 +50,15 @@ export default function Layout({ children }: LayoutProps) {
 
       <footer className="mt-12 bg-rose-600 p-6 text-white">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <Image width={120} height={60} alt="RTA" src={'/images/rta_logo.gif'} className="mb-4" />
+          <Link href={'/rta'}>
+            <Image
+              width={120}
+              height={60}
+              alt="RTA"
+              src={'/images/rta_logo.gif'}
+              className="mb-4"
+            />
+          </Link>
           <p className="text-sm">© {new Date().getFullYear()} Gooning Guide</p>
           <div className="flex flex-col items-center text-sm sm:flex-row">
             <Link href="/faq" className="mr-4 hover:underline">
