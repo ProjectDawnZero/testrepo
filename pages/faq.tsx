@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function FAQ() {
   return (
     <div className="container mx-auto p-4">
@@ -18,6 +20,12 @@ export default function FAQ() {
           <p className="text-gray-700">
             Contact us with the exact URL and reason. We review valid requests promptly.
           </p>
+          You can use the form in{' '}
+          <Link href={'/copyright'} className="text-blue-700">
+            {' '}
+            Copyrights Page{' '}
+          </Link>
+          . Or contact us via email dmca@gooningguide.com
         </div>
       </div>
     </div>

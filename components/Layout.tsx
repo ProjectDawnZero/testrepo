@@ -12,7 +12,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className="bg-gray-800 p-4 text-white">
         <nav className="container mx-auto flex flex-col items-center justify-between sm:flex-row">
           <Link href="/" className="text-xl font-bold">
-            <Image width={100} height={60} alt="Gooning Guide" src={'logo.png'} />
+            <Image width={100} height={60} alt="Gooning Guide" src={'/logo.png'} />
           </Link>
           <div className="flex flex-col items-center sm:flex-row">
             <Link href="/faq" className="mr-4 hover:underline">
