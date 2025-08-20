@@ -25,14 +25,18 @@ export default function AgeGate({ children }: { children: React.ReactNode }) {
             18 years of age.
           </p>
           <button
-            id="verify-age"
+            id="verify-age-accept"
             onClick={handleVerify}
             className="rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
           >
             I am 18 or older
           </button>
           <p className="mt-4">
-            <Link href="/compliance" className="text-blue-600 hover:underline">
+            <Link
+              id="verify-age-decline"
+              href="/compliance"
+              className="text-blue-600 hover:underline"
+            >
               Exit
             </Link>
           </p>

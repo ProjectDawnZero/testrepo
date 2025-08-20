@@ -31,12 +31,14 @@ export default function CookieConsent() {
         </p>
         <div className="flex justify-end space-x-2">
           <Link
+            id="privacy-decline"
             href={'/privacy'}
             className="rounded-xl border border-gray-300 px-4 py-2 text-gray-700 hover:bg-gray-100"
           >
             Decline
           </Link>
           <button
+            id="privacy-accept"
             onClick={handleVerify}
             className="rounded-xl bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
           >
