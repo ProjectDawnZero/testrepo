@@ -5,10 +5,11 @@ export default function AdSquare() {
   return (
     <div hidden={hide} className="mt-6 rounded-lg border p-4">
       <p className="text-center">
-        Ads by{' '}
+        {/* Ads by{' '}
         <Link className="underline" target="_blank" href={'https://www.exoclick.com/'}>
           ExoClick
-        </Link>
+        </Link> */}
+        Ad Space
       </p>
       <div className="flex flex-col">
         <div className="flex flex-row items-center text-center">
