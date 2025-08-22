@@ -14,11 +14,10 @@ export default function AdHorizontalTop() {
       <div id="horizontal-ad-2" className="items-center self-center text-center">
         <iframe
           className="hidden self-center justify-self-center sm:block"
-          src="//a.magsrv.com/iframe.php?idzone=5706004&size=728x90"
           width="728"
           height="90"
           scrolling="no"
-          frameBorder="0"
+          src="//tsyndicate.com/iframes2/2376de7994494fe1bcb7fbd48cbb43ed.html?extid={extid}"
         ></iframe>
         <iframe
           className="self-center justify-self-center sm:hidden"
