@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="RATING" content="RTA-5042-1996-1400-1577-RTA" />
+        <meta name="Trafficstars" content="75171" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GQPFQ01L8"></script>
         <script>
           {`window.dataLayer = window.dataLayer || [];
